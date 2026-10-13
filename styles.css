@@ -1,0 +1,95 @@
+/* Willow & Flow Yoga — Touchstone 3 visual design system */
+:root {
+  --cream: #FFF8F0;
+  --sage: #71866A;
+  --peach: #D88C5A;
+  --lavender: #E7E0EF;
+  --ink: #2F332D;
+  --white: #FFFFFF;
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: Arial, Helvetica, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
+body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--sans); line-height: 1.65; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--peach); outline-offset: 3px; }
+.skip-link { position: absolute; left: -999px; top: 1rem; z-index: 10; background: var(--white); padding: .7rem 1rem; }
+.skip-link:focus { left: 1rem; }
+.site-header { position: sticky; top: 0; z-index: 5; background: rgba(255,248,240,.96); border-bottom: 1px solid #e8ded2; }
+.nav-wrap { max-width: 1120px; margin: auto; padding: .9rem 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.brand { font-family: var(--serif); font-size: 1.45rem; font-weight: bold; text-decoration: none; white-space: nowrap; }
+.brand span { color: var(--peach); }
+.primary-nav { display: flex; align-items: center; gap: 1.5rem; }
+.primary-nav a { text-decoration: none; font-weight: 700; font-size: .94rem; }
+.primary-nav a:hover { color: var(--sage); }
+.menu-toggle { display: none; border: 1px solid var(--sage); color: var(--ink); background: transparent; border-radius: 999px; padding: .45rem .9rem; font: inherit; font-weight: 700; }
+.section { padding: 5rem max(1.5rem, calc((100% - 1080px) / 2)); }
+.hero { display: flex; align-items: center; gap: 3rem; min-height: 560px; }
+.hero-copy { flex: 1 1 52%; }
+.eyebrow { margin: 0 0 .65rem; color: var(--sage); text-transform: uppercase; letter-spacing: .15em; font-size: .76rem; font-weight: 800; }
+h1, h2, h3 { font-family: var(--serif); line-height: 1.15; margin-top: 0; }
+h1 { font-size: clamp(2.8rem, 5vw, 4.6rem); margin-bottom: 1.2rem; letter-spacing: -.035em; }
+h1 em { color: var(--sage); font-weight: normal; }
+h2 { font-size: clamp(2rem, 3.3vw, 3rem); margin-bottom: 1rem; }
+h3 { font-size: 1.55rem; margin-bottom: .7rem; }
+.hero-text { max-width: 540px; font-size: 1.1rem; margin-bottom: 1.8rem; }
+.button { display: inline-block; border: 0; border-radius: 999px; padding: .85rem 1.35rem; background: var(--sage); color: var(--white); font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; }
+.button:hover { background: #596e53; }
+.hero-art { position: relative; flex: 1 1 42%; min-height: 350px; overflow: hidden; border-radius: 48% 48% 18px 18px; background: var(--lavender); }
+.sun { position: absolute; width: 135px; height: 135px; border-radius: 50%; background: var(--peach); top: 15%; left: 34%; }
+.shape { position: absolute; border-radius: 50% 50% 0 0; }
+.shape-one { width: 75%; height: 58%; left: -8%; bottom: -7%; background: var(--sage); transform: rotate(-13deg); }
+.shape-two { width: 62%; height: 47%; right: -8%; bottom: -4%; background: #a8b79d; transform: rotate(14deg); }
+.art-caption { position: absolute; bottom: 1.3rem; left: 1.3rem; z-index: 1; color: var(--white); font-family: var(--serif); font-size: 1.2rem; }
+.approach { background: var(--white); text-align: center; }
+.section-heading { max-width: 720px; margin: 0 auto 2rem; }
+.section-heading > p:not(.eyebrow) { margin-bottom: 0; }
+.section-intro { max-width: 760px; margin: auto; font-size: 1.08rem; }
+.classes-section { text-align: center; }
+.class-grid { display: flex; align-items: stretch; gap: 1.25rem; margin-top: 2.5rem; }
+.class-card { flex: 1 1 0; text-align: left; padding: 2rem; border-radius: 18px; display: flex; flex-direction: column; min-height: 285px; }
+.sage-card { background: #e5ebdf; }
+.peach-card { background: #f5e1d3; }
+.lavender-card { background: var(--lavender); }
+.class-number { font-size: .8rem; font-weight: 800; letter-spacing: .12em; color: var(--sage); margin-bottom: 1.2rem; }
+.class-card p { margin-top: 0; }
+.class-card a { margin-top: auto; color: var(--ink); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.schedule-section { background: var(--white); }
+.schedule-list { max-width: 800px; margin: auto; }
+.schedule-row { display: flex; gap: 1rem; justify-content: space-between; padding: 1.1rem .3rem; border-bottom: 1px solid #e8ded2; }
+.schedule-row strong { min-width: 120px; }
+.schedule-note { margin-top: 1rem; color: #62675f; font-size: .86rem; }
+.contact-section { display: flex; gap: 4rem; align-items: flex-start; }
+.contact-copy, .contact-form { flex: 1 1 0; }
+.contact-form { display: flex; flex-direction: column; gap: .45rem; background: var(--white); padding: 2rem; border-radius: 18px; box-shadow: 0 8px 28px rgba(47,51,45,.06); }
+.contact-form label { font-weight: 700; margin-top: .4rem; }
+.contact-form input, .contact-form select, .contact-form textarea { width: 100%; border: 1px solid #b9bcb4; border-radius: 8px; padding: .75rem; font: inherit; color: var(--ink); background: var(--cream); }
+.contact-form .button { margin-top: .8rem; align-self: flex-start; }
+.form-message { margin: .5rem 0 0; font-weight: 700; color: #40583b; }
+.site-footer { text-align: center; padding: 2.5rem 1.5rem; background: #e5ebdf; }
+.site-footer p { margin: .35rem 0; }
+.site-footer small { color: #596257; }
+@media (max-width: 760px) {
+  .nav-wrap { flex-wrap: wrap; }
+  .menu-toggle { display: inline-block; }
+  .primary-nav { display: none; width: 100%; flex-direction: column; align-items: stretch; gap: 0; padding-top: .5rem; }
+  .primary-nav.open { display: flex; }
+  .primary-nav a { padding: .7rem .2rem; border-top: 1px solid #e8ded2; }
+  .section { padding: 3.5rem 1.25rem; }
+  .hero { min-height: 0; flex-direction: column; align-items: stretch; gap: 2rem; }
+  .hero-art { min-height: 270px; flex-basis: auto; }
+  .class-grid { flex-direction: column; }
+  .class-card { min-height: 0; }
+  .contact-section { flex-direction: column; gap: 2rem; }
+  .contact-form { width: 100%; padding: 1.4rem; }
+  .schedule-row { flex-wrap: wrap; }
+  .schedule-row strong { min-width: 100%; }
+}
+@media (min-width: 761px) {
+  .primary-nav { display: flex !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

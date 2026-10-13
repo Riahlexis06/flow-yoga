@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A welcoming yoga studio with classes for every pace.">
+  <title>Willow &amp; Flow Yoga</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#home" aria-label="Willow and Flow Yoga home">Willow <span>&amp;</span> Flow</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <a href="#approach">Our Approach</a>
+        <a href="#classes">Classes</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">A little space to breathe</p>
+        <h1>Find your flow.<br><em>Come as you are.</em></h1>
+        <p class="hero-text">A welcoming yoga space for slowing down, building strength, and making time for yourself—one breath at a time.</p>
+        <a class="button" href="#classes">Explore our classes</a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Decorative sun and gentle flowing shapes">
+        <div class="sun"></div><div class="shape shape-one"></div><div class="shape shape-two"></div>
+        <span class="art-caption">Breathe in. Let go.</span>
+      </div>
+    </section>
+
+    <section id="approach" class="section approach">
+      <div class="section-heading">
+        <p class="eyebrow">Our approach</p>
+        <h2>Yoga that meets you where you are.</h2>
+      </div>
+      <p class="section-intro">At Willow &amp; Flow, practice is about feeling better in your body and creating a little more calm in your day. Our classes welcome beginners and experienced students alike, with options to move gently or build a stronger practice.</p>
+    </section>
+
+    <section id="classes" class="section classes-section">
+      <div class="section-heading">
+        <p class="eyebrow">Find your pace</p>
+        <h2>Explore our classes</h2>
+        <p>Choose the kind of movement your mind and body need today.</p>
+      </div>
+      <div class="class-grid">
+        <article class="class-card sage-card">
+          <span class="class-number">01</span>
+          <h3>Slow Flow</h3>
+          <p>A steady, mindful practice with gentle transitions and time to connect with your breath.</p>
+          <a href="#schedule">View schedule <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="class-card peach-card">
+          <span class="class-number">02</span>
+          <h3>Unwind &amp; Restore</h3>
+          <p>A relaxing class with supported poses and quiet moments to release tension.</p>
+          <a href="#schedule">View schedule <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="class-card lavender-card">
+          <span class="class-number">03</span>
+          <h3>Everyday Flow</h3>
+          <p>A balanced practice that combines accessible movement, strength, and flexibility.</p>
+          <a href="#schedule">View schedule <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="schedule" class="section schedule-section">
+      <div class="section-heading">
+        <p class="eyebrow">Make time for you</p>
+        <h2>Sample weekly schedule</h2>
+      </div>
+      <div class="schedule-list">
+        <div class="schedule-row"><strong>Monday</strong><span>Slow Flow</span><span>6:00 PM</span></div>
+        <div class="schedule-row"><strong>Wednesday</strong><span>Everyday Flow</span><span>5:30 PM</span></div>
+        <div class="schedule-row"><strong>Friday</strong><span>Unwind &amp; Restore</span><span>6:30 PM</span></div>
+        <div class="schedule-note">This is a sample schedule for the website project. Confirm class times with the studio before attending.</div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-copy">
+        <p class="eyebrow">Stay connected</p>
+        <h2>Ready to find your flow?</h2>
+        <p>Send a note and let us know which class you are interested in. This demonstration form shows a confirmation on this page and does not send email.</p>
+      </div>
+      <form id="contact-form" class="contact-form">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <label for="interest">Class interest</label>
+        <select id="interest" name="interest" required>
+          <option value="">Choose a class</option>
+          <option>Slow Flow</option><option>Unwind &amp; Restore</option><option>Everyday Flow</option>
+        </select>
+        <label for="message">Message (optional)</label>
+        <textarea id="message" name="message" rows="3"></textarea>
+        <button class="button" type="submit">Send message</button>
+        <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#home">Willow <span>&amp;</span> Flow</a>
+    <p>Make room for a little more calm.</p>
+    <small>Student website project · Willow &amp; Flow Yoga</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
